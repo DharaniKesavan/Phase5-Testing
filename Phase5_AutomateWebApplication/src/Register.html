@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style type="text/css">
+.container{
+  background-color: silver;
+  width : 380px;
+  height : 450px;
+  margin: 0 auto; 
+  padding-top: 20px;
+  margin-top : 15px;
+}
+</style>
+</head>
+<body>
+	<form action="registerSuccess.html">
+	<div class="container">
+		<h2 style="text-align: center; padding-bottom: 5px"><u>Register Form</u></h2>
+		<table  style="margin: 0 auto;">
+			<tr>
+				<td><label for="name"><b>Name : </b></label><br><br></td>
+				<td><input type="text" name="name" id="name" required><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="mail"><b>Email ID :</b></label><br><br></td>
+				<td><input type="email" name="mail" id="mail" required><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="pass1"><b>Password :</b></label><br><br></td>
+				<td><input type="password" name="pass1" id="pass1" required><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="pass2"><b>Confirm Password :</b></label><br><br></td>
+				<td><input type="password" name="pass2" id="pass2" required><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="gen"><b>Gender :</b></label><br><br></td>
+				<td><select name="gen" id="gen">
+	  				<option value="male">Male</option>
+	  				<option value="female">Female</option>
+	  				<option value="other">Other</option>
+					</select><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="add"><b>Address :</b></label><br><br></td>
+				<td><input type="text" name="add" id="add" required><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="phone"><b>Phone Number :</b></label><br></td>
+				<td><input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required><br></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><small>Must contain 10 digits only</small><br><br></td>
+			</tr>
+		</table>
+
+		<center><button type="submit">Register</button></center>
+	</div>
+	</form>
+</body>
+</html>
