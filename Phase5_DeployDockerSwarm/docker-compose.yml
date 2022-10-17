@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+    deploy-swarm:
+        container_name: deploy-swarm
+        image: deploy-swarm:latest
+        ports:
+            - 8080:8080
+        networks:
+            - spring-cloud-network
+   
+networks:
+    spring-cloud-network:
+       external: true    
