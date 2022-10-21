@@ -1,0 +1,43 @@
+<div class="container">
+  <!-- Form -->
+<div class="row">
+<div class="col-6" style="text-align: center;">
+  <form class="form-example card mt-5 pl-5 pt-5 pb-5" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <h1>Login</h1>
+
+    <div class="form-group" style="padding-left: 150px;">
+      <label for="email" class="text-light">Email ID:</label>
+      <input
+        type="text"
+        class="form-control email"
+        id="email"
+        placeholder="Email ID"
+        name="email"
+        style="width: 20vw"
+      />
+    </div>
+    <div class="form-group" style="padding-left: 150px;">
+      <label for="password" class="text-light">Password:</label>
+      <input
+        type="password"
+        class="form-control password"
+        id="password"
+        placeholder="Password"
+        name="password"
+        style="width: 20vw"
+      />
+    </div>
+    <div style="padding-top: 10px;">
+      <button type="submit" class="btn btn-primary btn-customized" >
+        Login
+      </button>
+    </div>
+    <!-- End input fields -->
+  </form>
+</div>
+  <div class="col-6">
+    <img src="https://thumbs.dreamstime.com/b/aadhaar-cards-maadhaar-app-smart-phone-wooden-floor-194206585.jpg" alt="Aadhar ref image">
+  </div>
+  <!-- Form end -->
+</div>
+</div>
